@@ -18,7 +18,8 @@
 </template>
 
 <script>
-import Graph from "./components/Graph.vue";
+import Graph from "./components/Common.vue";
+// import Graph from "./components/Unique.vue";
 
 export default {
   name: "App",
@@ -48,7 +49,6 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  padding-bottom: 6vh;
   font-family: "Montserrat", sans-serif !important;
 }
 #app > .title {

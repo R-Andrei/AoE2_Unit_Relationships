@@ -1,42 +1,137 @@
 {
-    "name": "units",
-    "children": [{
-            "name": "infantry",
-            "children": [
-                { "name": "militia", "id": 1 },
-                { "name": "spearman", "id": 2 },
-                { "name": "eagle scout", "id": 3 }
-            ]
-        },
-        {
-            "name": "artillery",
-            "children": [
-                { "name": "archer", "id": 4 },
-                { "name": "skirmisher", "id": 5 }
-            ]
-        },
-        {
-            "name": "cavalry",
-            "children": [
-                { "name": "scout", "id": 6 },
-                { "name": "knight", "id": 7 },
-                { "name": "camel rider", "id": 8 },
-                { "name": "cavalry archer", "id": 9 }
-            ]
-        },
-        {
-            "name": "siege",
-            "children": [
-                { "name": "battering ram", "id": 10 },
-                { "name": "mangonel", "id": 11 },
-                { "name": "scorpion", "id": 12 }
-            ]
-        },
-        {
-            "name": "special",
-            "children": [
-                { "name": "monk", "id": 13 }
-            ]
-        }
-    ]
+    "common": {
+        "name": "common",
+        "id": 1,
+        "children": [{
+                "name": "infantry",
+                "id": 11,
+                "children": [{ "name": "militia", "id": 1101 },
+                    { "name": "spearman", "id": 1102 },
+                    { "name": "eagle scout", "id": 1103 }
+                ]
+            },
+            {
+                "name": "artillery",
+                "id": 12,
+                "children": [
+                    { "name": "archer", "id": 1201 },
+                    { "name": "skirmisher", "id": 1202 },
+                    { "name": "hand cannoneer", "id": 1203 }
+                ]
+            },
+            {
+                "name": "cavalry",
+                "id": 13,
+                "children": [
+                    { "name": "scout", "id": 1301 },
+                    { "name": "knight", "id": 1302 },
+                    { "name": "camel rider", "id": 1303 },
+                    { "name": "cavalry archer", "id": 1304 }
+                ]
+            },
+            {
+                "name": "siege",
+                "id": 14,
+                "children": [
+                    { "name": "ram", "id": 1401 },
+                    { "name": "mangonel", "id": 1402 },
+                    { "name": "scorpion", "id": 1403 },
+                    { "name": "trebuchet", "id": 1404 },
+                    { "name": "bombard cannon", "id": 1405 },
+                    { "name": "siege tower", "id": 1406 }
+                ]
+            },
+            {
+                "name": "special",
+                "id": 15,
+                "children": [
+                    { "name": "monk", "id": 1501 },
+                    { "name": "petard", "id": 1502 }
+                ]
+            }
+        ]
+    },
+    "unique": {
+        "name": "unique",
+        "id": 2,
+        "children": [{
+                "name": "infantry",
+                "id": 21,
+                "children": [
+                    { "name": "jaguar warrior", "id": 2101 },
+                    { "name": "woad raider", "id": 2102 },
+                    { "name": "shotel warrior", "id": 2103 },
+                    { "name": "huskarl", "id": 2104 },
+                    { "name": "kamayuk", "id": 2105 },
+                    { "name": "condottiero", "id": 2106 },
+                    { "name": "samurai", "id": 2107 },
+                    { "name": "karambit warrior", "id": 2108 },
+                    { "name": "teutonic knight", "id": 2109 },
+                    { "name": "berserker", "id": 2110 },
+                    { "name": "throwing axeman", "id": 2111 },
+                    { "name": "gbeto", "id": 2112 }
+                ]
+            },
+            {
+                "name": "artillery",
+                "id": 22,
+                "children": [
+                    { "name": "longbowman", "id": 2201 },
+                    { "name": "chu ko nu", "id": 2202 },
+                    { "name": "slinger", "id": 2203 },
+                    { "name": "genoese crossbowman", "id": 2204 },
+                    { "name": "plumed archer", "id": 2205 },
+                    { "name": "janissary", "id": 2206 },
+                    { "name": "rattan archer", "id": 2207 }
+                ]
+            },
+            {
+                "name": "cavalry",
+                "id": 23,
+                "children": [
+                    { "name": "steppe lancer", "id": 2301 },
+                    { "name": "battle elephant", "id": 2302 },
+                    { "name": "cataphract", "id": 2303 },
+                    { "name": "tarkan", "id": 2304 },
+                    { "name": "leitis", "id": 2305 },
+                    { "name": "magyar huszar", "id": 2306 },
+                    { "name": "war elephant", "id": 2307 },
+                    { "name": "boyar", "id": 2308 },
+                    { "name": "keshik", "id": 2309 }
+                ]
+            },
+            {
+                "name": "cavalry archer",
+                "id": 24,
+                "children": [
+                    { "name": "genitour", "id": 2401 },
+                    { "name": "camel archer", "id": 2402 },
+                    { "name": "arambai", "id": 2403 },
+                    { "name": "kipchak", "id": 2404 },
+                    { "name": "elephant archer", "id": 2405 },
+                    { "name": "war wagon", "id": 2406 },
+                    { "name": "mangudai", "id": 2407 },
+                    { "name": "mameluke", "id": 2408 },
+                    { "name": "conquistador", "id": 2409 }
+                ]
+            },
+            {
+                "name": "siege",
+                "id": 25,
+                "children": [
+                    { "name": "ballista elephant", "id": 2501 },
+                    { "name": "organ gun", "id": 2502 }
+                ]
+            },
+            {
+                "name": "special",
+                "id": 26,
+                "children": [
+                    { "name": "konnik", "id": 2601 },
+                    { "name": "flaming camel", "id": 2603 },
+                    { "name": "missionary", "id": 2604 }
+                ]
+            }
+        ]
+    }
 }

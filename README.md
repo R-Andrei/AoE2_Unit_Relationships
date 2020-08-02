@@ -1,4 +1,4 @@
-# Age of Empire 2 DE Unit Relationships
+# Age of Empires 2 DE Unit Relationships
 
 ## Project setup
 ```
