@@ -1,4 +1,4 @@
-# aoe2_counters
+# Age of Empire 2 DE Unit Relationships
 
 ## Project setup
 ```

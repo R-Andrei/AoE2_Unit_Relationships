@@ -34,8 +34,8 @@ const graphData = {
       id: 2,
       name: "cost",
       inName: "is cheaper than",
-      outName: "is more expensive than"
-    }
+      outName: "is more expensive than",
+    },
   ],
 };
 
@@ -74,26 +74,26 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 .graph1 {
   height: 91vh;
   width: 99vw;
 }
-.graph1>svg>g>g {
+.graph1 > svg > g > g {
   stroke: #c2def8f6;
 }
-.graph1>svg>g>g>text {
-  font-family: 'Montserrat', sans-serif !important;
+.graph1 > svg > g > g > text {
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 100 !important;
   font-size: 13px !important;
 }
-.graph1>svg>g>g.node--source {
+.graph1 > svg > g > g.node--source {
   stroke: #bfe7c4f8;
 }
-.graph1>svg>g>g.node--target {
+.graph1 > svg > g > g.node--target {
   stroke: #e4b5b5f8;
 }
-.graph1>svg>g>g.node--selected {
-  stroke: #c7d5e2ee
+.graph1 > svg > g > g.node--selected {
+  stroke: #c7d5e2ee;
 }
 </style>
