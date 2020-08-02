@@ -1,0 +1,42 @@
+{
+    "name": "units",
+    "children": [{
+            "name": "infantry",
+            "children": [
+                { "name": "militia", "id": 1 },
+                { "name": "spearman", "id": 2 },
+                { "name": "eagle scout", "id": 3 }
+            ]
+        },
+        {
+            "name": "artillery",
+            "children": [
+                { "name": "archer", "id": 4 },
+                { "name": "skirmisher", "id": 5 }
+            ]
+        },
+        {
+            "name": "cavalry",
+            "children": [
+                { "name": "scout", "id": 6 },
+                { "name": "knight", "id": 7 },
+                { "name": "camel rider", "id": 8 },
+                { "name": "cavalry archer", "id": 9 }
+            ]
+        },
+        {
+            "name": "siege",
+            "children": [
+                { "name": "battering ram", "id": 10 },
+                { "name": "mangonel", "id": 11 },
+                { "name": "scorpion", "id": 12 }
+            ]
+        },
+        {
+            "name": "special",
+            "children": [
+                { "name": "monk", "id": 13 }
+            ]
+        }
+    ]
+}
