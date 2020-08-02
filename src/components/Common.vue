@@ -45,8 +45,8 @@ const data = alldata.common;
 const graphData = {
   loading: false,
   highlightedNode: null,
-  marginX: 0,
-  marginY: 75,
+  marginX: 25,
+  marginY: 80,
   tree: data,
   links: links,
   linkTypes: [
@@ -146,7 +146,7 @@ export default {
   width: 99vw;
 }
 .graph1 > svg > g > g {
-  stroke: #c2def8f6;
+  stroke: #c2def8f6 !important;
 }
 .graph1 > svg > g > g > text {
   font-family: "Montserrat", sans-serif !important;
@@ -156,21 +156,21 @@ export default {
   cursor: pointer;
 }
 .graph1 > svg > g > g.node--source {
-  stroke: #bfe7c4f8;
+  stroke: #bfe7c4f8 !important;
 }
 .graph1 > svg > g > g.node--target {
-  stroke: #e4b5b5f8;
+  stroke: #e4b5b5f8 !important;
 }
 .graph1 > svg > g > g.node--selected {
-  stroke: #c7d5e2ee;
+  stroke: #c7d5e2ee !important;
 }
 .interactive-graph-data {
   position: relative;
 }
 .interactive-graph-data > .relationships {
   position: absolute;
-  border: 1px solid #ffffff30;
-  top: 50px;
+  border: 1px solid #ffffff30 !important;
+  top: 70px;
   left: 10px;
   padding: 10px 10px;
   display: flex;
@@ -179,14 +179,14 @@ export default {
 .interactive-graph-data > .relationships > .count,
 .interactive-graph-data > .relationships > .unit {
   text-align: left;
-  color: #c2def8cc;
+  color: #c2def8cc !important;
   font-size: 14px;
   padding: 2px;
 }
 .interactive-graph-data > .relationships > .count > .data,
 .interactive-graph-data > .relationships > .unit > .data {
   margin-left: 5px;
-  color: #c2def8f6;
+  color: #c2def8f6 !important;
   font-weight: bold;
 }
 </style>

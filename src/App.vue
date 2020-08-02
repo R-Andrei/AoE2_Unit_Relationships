@@ -53,7 +53,7 @@ body {
 }
 #app > .title {
   position: absolute;
-  color: #c2def8cc;
+  color: #c2def8cc !important;
   top: 10px;
   left: 10px;
   font-size: 20px !important;
@@ -81,23 +81,23 @@ body {
   margin-right: 8px;
 }
 #app > .legend > .sub-legend.strong > .relationship {
-  background-color: #76f687bb;
+  background-color: #76f687bb !important;
 }
 #app > .legend > .sub-legend.weak > .relationship {
-  background-color: #fb6666bb;
+  background-color: #fb6666bb !important;
 }
 #app > .legend > .sub-legend > span {
-  color: #c2def8cc;
+  color: #c2def8cc !important;
   font-weight: 200;
   font-size: 13px;
 }
 .graph .link {
-  stroke: #45b4ffbb;
+  stroke: #45b4ffbb !important;
 }
 .graph .link.link--target {
-  stroke: #76f687aa;
+  stroke: #76f687aa !important;
 }
 .graph .link.link--source {
-  stroke: #fb6666aa;
+  stroke: #fb6666aa !important;
 }
 </style>
