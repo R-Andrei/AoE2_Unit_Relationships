@@ -51,7 +51,7 @@ const graphData = {
   loading: false,
   highlightedNode: null,
   marginX: 50,
-  marginY: 180,
+  marginY: 50,
   tree: data,
   links: links,
   linkTypes: [
