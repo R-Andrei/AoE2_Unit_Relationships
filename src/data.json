@@ -26,7 +26,9 @@
                     { "name": "scout", "id": 1301 },
                     { "name": "knight", "id": 1302 },
                     { "name": "camel rider", "id": 1303 },
-                    { "name": "cavalry archer", "id": 1304 }
+                    { "name": "cavalry archer", "id": 1304 },
+                    { "name": "steppe lancer", "id": 1305 },
+                    { "name": "battle elephant", "id": 1306 }
                 ]
             },
             {
@@ -89,15 +91,13 @@
                 "name": "cavalry",
                 "id": 23,
                 "children": [
-                    { "name": "steppe lancer", "id": 2301 },
-                    { "name": "battle elephant", "id": 2302 },
-                    { "name": "cataphract", "id": 2303 },
-                    { "name": "tarkan", "id": 2304 },
-                    { "name": "leitis", "id": 2305 },
-                    { "name": "magyar huszar", "id": 2306 },
-                    { "name": "war elephant", "id": 2307 },
-                    { "name": "boyar", "id": 2308 },
-                    { "name": "keshik", "id": 2309 }
+                    { "name": "cataphract", "id": 2301 },
+                    { "name": "tarkan", "id": 2302 },
+                    { "name": "leitis", "id": 2303 },
+                    { "name": "magyar huszar", "id": 2304 },
+                    { "name": "war elephant", "id": 2305 },
+                    { "name": "boyar", "id": 2306 },
+                    { "name": "keshik", "id": 2307 }
                 ]
             },
             {

@@ -36,23 +36,22 @@
 <script>
 import { hierarchicalEdgeBundling } from "vued3tree";
 import alldata from "../data.json";
-import { links } from "../links";
-
-const count = links.length;
-// const units = links;
+import { common, unique, combined } from "../links";
 
 const data = {
   name: "units",
   children: [alldata.common, alldata.unique],
 };
 
-console.log(data);
+const links = [...common, ...unique, ...combined];
+
+const count = links.length;
 
 const graphData = {
   loading: false,
   highlightedNode: null,
-  marginX: 25,
-  marginY: 40,
+  marginX: 50,
+  marginY: 180,
   tree: data,
   links: links,
   linkTypes: [
@@ -150,7 +149,7 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 .graph1 {
-  height: 97vh;
+  height: 97.5vh;
   width: 99vw;
 }
 .graph1 > svg > g > g {

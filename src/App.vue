@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="title">
-      <span>[Land] [Military] [Non-unique] Unit Relationships</span>
+      <span>[Land-Only] [Military] Unit Relationships</span>
     </div>
     <Graph />
     <div class="legend">
@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import Graph from "./components/Common.vue";
-// import Graph from "./components/Unique.vue";
+// import Graph from "./components/Common.vue";
+import Graph from "./components/Unique.vue";
 
 export default {
   name: "App",
@@ -92,12 +92,12 @@ body {
   font-size: 13px;
 }
 .graph .link {
-  stroke: #45b4ffbb !important;
+  stroke: #45b4ff88 !important;
 }
 .graph .link.link--target {
-  stroke: #76f687aa !important;
+  stroke: #76f68788 !important;
 }
 .graph .link.link--source {
-  stroke: #fb6666aa !important;
+  stroke: #fb666688 !important;
 }
 </style>

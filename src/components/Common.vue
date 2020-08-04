@@ -36,11 +36,12 @@
 <script>
 import { hierarchicalEdgeBundling } from "vued3tree";
 import alldata from "../data.json";
-import { links } from "../links";
-
-const count = links.length;
+import { common } from "../links";
 
 const data = alldata.common;
+
+const links = common;
+const count = links.length;
 
 const graphData = {
   loading: false,
