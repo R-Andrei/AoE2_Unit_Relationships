@@ -2,20 +2,20 @@
   <div class="interactive-graph-data">
     <div class="relationships">
       <div class="count total">
-        <span class="description">Total relationships:</span>
+        <span class="description">Total interactions:</span>
         <span class="data">{{count}}</span>
-      </div>
-      <div class="count strong">
-        <span class="description">Strong against:</span>
-        <span class="data">{{strongCount}}</span>
-      </div>
-      <div class="count weak">
-        <span class="description">Weak against:</span>
-        <span class="data">{{weakCount}}</span>
       </div>
       <div class="unit selected">
         <span class="description">Selected unit:</span>
         <span class="data">{{selectedUnit}}</span>
+      </div>
+      <div class="count strong">
+        <span class="description">Possible advantages:</span>
+        <span class="data">{{(strongCount !== 0) ? strongCount : '-'}}</span>
+      </div>
+      <div class="count weak">
+        <span class="description">Disatvantages:</span>
+        <span class="data">{{(weakCount !== 0) ? weakCount : '-'}}</span>
       </div>
     </div>
     <hierarchical-edge-bundling
@@ -37,6 +37,7 @@
 import { hierarchicalEdgeBundling } from "vued3tree";
 import alldata from "../data.json";
 import { common, unique, combined } from "../links";
+import { capWords } from "../utils";
 
 const data = {
   name: "units",
@@ -71,6 +72,9 @@ const graphData = {
 };
 
 export default {
+  created() {
+    this.updateCount(count);
+  },
   components: {
     hierarchicalEdgeBundling,
   },
@@ -94,21 +98,22 @@ export default {
 
       const strongCount = links.filter((link) => link.target === id).length;
       const weakCount = links.filter((link) => link.source === id).length;
+      const totalCount = strongCount + weakCount;
 
       const unit = data.children
         .find((child) => child.id === family)
         .children.find((child) => child.id === subFamily)
         .children.find((child) => child.id === id).name;
 
-      this.updateCount(strongCount, weakCount);
-      this.updateActiveUnit(unit);
+      this.updateCount(totalCount, strongCount, weakCount);
+      this.updateActiveUnit(capWords(unit));
     },
     mouseNodeOut() {
       this.changeCurrent(null);
-      this.updateCount();
+      this.updateCount(count);
       this.updateActiveUnit();
     },
-    updateCount(strongCount = 0, weakCount = 0) {
+    updateCount(totalCount = 0, strongCount = 0, weakCount = 0) {
       this.$store.commit("updateProperty", {
         name: "strongCount",
         value: strongCount,
@@ -116,6 +121,10 @@ export default {
       this.$store.commit("updateProperty", {
         name: "weakCount",
         value: weakCount,
+      });
+      this.$store.commit("updateProperty", {
+        name: "totalCount",
+        value: totalCount,
       });
     },
     updateActiveUnit(unit = null) {
@@ -129,7 +138,7 @@ export default {
   },
   computed: {
     count() {
-      return count;
+      return this.$store.state.totalCount;
     },
     strongCount() {
       return this.$store.state.strongCount;
@@ -169,7 +178,7 @@ export default {
   stroke: #e4b5b5f8 !important;
 }
 .graph1 > svg > g > g.node--selected {
-  stroke: #c7d5e2ee !important;
+  stroke: #fafafafa  !important;
 }
 .interactive-graph-data {
   position: relative;
