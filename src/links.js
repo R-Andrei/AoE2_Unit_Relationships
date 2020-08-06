@@ -47,7 +47,7 @@ export const common = [
 
   // knight
   { target: 1302, target_name: "knight", source: 1101, source_name: "militia", type: 1 }, // militia
-  { target: 1302, target_name: "knight", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 1302, target_name: "knight", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
   { target: 1302, target_name: "knight", source: 1201, source_name: "archer", type: 1 }, // archer
   { target: 1302, target_name: "knight", source: 1202, source_name: "skirmisher", type: 1 }, // skirmisher
   { target: 1302, target_name: "knight", source: 1203, source_name: "hand_cannoneer", type: 1 }, // hand_cannoneer
@@ -137,45 +137,45 @@ export const unique = [
   { target: 2113, target_name: "eagle_warrior", source: 2402, source_name: "camel_archer", type: 1 }, // camel_archer
   { target: 2113, target_name: "eagle_warrior", source: 2404, source_name: "kipchak", type: 1 }, // kipchak
   { target: 2113, target_name: "eagle_warrior", source: 2405, source_name: "elephant_archer", type: 1 }, // elephant_archer
-  { target: 2113, target_name: "eagle_warrior", source: 2301, source_name: "steppe", type: 1 }, // steppe lancer
+  { target: 2113, target_name: "eagle_warrior", source: 2301, source_name: "steppe", type: 1 }, // steppe_lancer
   { target: 2113, target_name: "eagle_warrior", source: 2502, source_name: "organ_gun", type: 1 }, // organ_gun
   { target: 2113, target_name: "eagle_warrior", source: 2604, source_name: "missionary", type: 1 }, // missionary
 
   // jaguar_warrior
-  { target: 2101, target_name: "jaguar_warrior", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2101, target_name: "jaguar_warrior", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // woad_raider
-  { target: 2102, target_name: "woad_raider", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2102, target_name: "woad_raider", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // shotel_warrior
-  { target: 2103, target_name: "shotel_warrior", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2103, target_name: "shotel_warrior", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // huskarl
-  { target: 2104, target_name: "huskarl", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2104, target_name: "huskarl", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // condottiero
-  { target: 2106, target_name: "condottiero", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2106, target_name: "condottiero", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // samurai
-  { target: 2107, target_name: "samurai", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2107, target_name: "samurai", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // teutonic_knight
-  { target: 2109, target_name: "teutonic_knight", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2109, target_name: "teutonic_knight", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // berserker
-  { target: 2110, target_name: "berserker", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2110, target_name: "berserker", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // gbeto
-  { target: 2111, target_name: "gbeto", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2111, target_name: "gbeto", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // throwing_axeman
-  { target: 2112, target_name: "throwing_axeman", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2112, target_name: "throwing_axeman", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // battle_elephant
   { target: 2302, target_name: "battle_elephant", source: 1201, source_name: "archer", type: 1 }, // archer
 
   // cataphracts
-  { target: 2303, target_name: "cataphracts", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2303, target_name: "cataphracts", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // tarkan
   { target: 2304, target_name: "tarkan", source: 1201, source_name: "archer", type: 1 }, // archer
@@ -184,22 +184,22 @@ export const unique = [
   { target: 2305, target_name: "leitis", source: 2113, source_name: "eagle", type: 1 }, // eagles
 
   // war_elephant
-  { target: 2307, target_name: "war_elephant", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2307, target_name: "war_elephant", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // boyar
-  { target: 2308, target_name: "boyar", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2308, target_name: "boyar", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // keshik
   { target: 2309, target_name: "keshik", source: 2113, source_name: "eagle", type: 1 }, // eagles
 
   // arambai
-  { target: 2403, target_name: "arambai", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2403, target_name: "arambai", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // mameluke
-  { target: 2408, target_name: "mameluke", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2408, target_name: "mameluke", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
   // conquistador
-  { target: 2409, target_name: "conquistador", source: 2113, source_name: "eagle", type: 1 }, // eagle scout
+  { target: 2409, target_name: "conquistador", source: 2113, source_name: "eagle", type: 1 }, // eagle_scout
 
 ];
 
@@ -209,7 +209,7 @@ export const combined = [
   { target: 1101, target_name: "militia", source: 2113, source_name: "eagle", type: 1 }, // eagles
 
   //spearman
-  { target: 1102, target_name: "spearman", source: 2301, source_name: "steppe", type: 1 }, // steppe lancer
+  { target: 1102, target_name: "spearman", source: 2301, source_name: "steppe", type: 1 }, // steppe_lancer
   { target: 1102, target_name: "spearman", source: 2302, source_name: "battle_elephant", type: 1 }, // battle_elephant
   { target: 1102, target_name: "spearman", source: 2303, source_name: "cataphract", type: 1 }, // cataphract
   { target: 1102, target_name: "spearman", source: 2304, source_name: "tarkan", type: 1 }, // tarkan
@@ -377,9 +377,9 @@ export const combined = [
   { target: 2207, target_name: "rattan_archer", source: 1203, source_name: "hand_cannoneer", type: 1 }, // hand_cannoneer
 
   // rattan_archer
-  { target: 2301, target_name: "steppe lancer", source: 1202, source_name: "skirmisher", type: 1 }, // skirmisher
-  { target: 2301, target_name: "steppe lancer", source: 1203, source_name: "hand_cannoneer", type: 1 }, // hand_cannoneer
-  { target: 2301, target_name: "steppe lancer", source: 1301, source_name: "scout", type: 1 }, // scout
+  { target: 2301, target_name: "steppe_lancer", source: 1202, source_name: "skirmisher", type: 1 }, // skirmisher
+  { target: 2301, target_name: "steppe_lancer", source: 1203, source_name: "hand_cannoneer", type: 1 }, // hand_cannoneer
+  { target: 2301, target_name: "steppe_lancer", source: 1301, source_name: "scout", type: 1 }, // scout
 
   // battle_elephant
   { target: 2302, target_name: "battle_elephant", source: 1201, source_name: "archer", type: 1 }, // archer
