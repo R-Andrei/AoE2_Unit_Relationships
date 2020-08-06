@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <div class="title">
-      <span>[Land-Only] [Military] Unit Relationships</span>
+      <span>[Military] [Land] Unit Relationships</span>
     </div>
     <Graph />
     <div class="legend">
       <div class="sub-legend strong">
         <div class="relationship" />
-        <span>is strong against</span>
+        <span>possible advantage</span>
       </div>
       <div class="sub-legend weak">
         <div class="relationship" />
-        <span>is weak against</span>
+        <span>disadvantage</span>
+      </div>
+      <div class="sub-legend default">
+        <div class="relationship" />
+        <span>neutral interaction</span>
       </div>
     </div>
   </div>
@@ -86,18 +90,31 @@ body {
 #app > .legend > .sub-legend.weak > .relationship {
   background-color: #fb6666bb !important;
 }
+#app > .legend > .sub-legend.default > .relationship {
+  background-color: #242729bb !important;
+}
+
 #app > .legend > .sub-legend > span {
   color: #c2def8cc !important;
   font-weight: 200;
   font-size: 13px;
 }
+
+.graph.detailed .link {
+  stroke-opacity: .1;
+  stroke: #242729 !important;
+}
+
 .graph .link {
-  stroke: #45b4ff88 !important;
+
+  transition: all 0.3s ease-in-out;
+
+  stroke: #45b4ff60 !important;
 }
 .graph .link.link--target {
-  stroke: #76f68788 !important;
+  stroke: #7bff8d69 !important;
 }
 .graph .link.link--source {
-  stroke: #fb666688 !important;
+  stroke: #ff676769 !important;
 }
 </style>

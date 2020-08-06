@@ -8,6 +8,7 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
+    totalCount: 0,
     weakCount: 0,
     strongCount: 0,
     activeUnit: null,
