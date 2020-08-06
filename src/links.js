@@ -43,6 +43,7 @@ export const common = [
   { target: 1301, source: 1404, type: 1 }, // trebuchet
   { target: 1301, source: 1405, type: 1 }, // bombard cannon
   { target: 1301, source: 1406, type: 1 }, // siege tower
+  { target: 1301, source: 1501, type: 1 }, // monk
 
   // knight
   { target: 1302, source: 1101, type: 1 }, // militia
@@ -256,10 +257,20 @@ export const combined = [
   { target: 1203, source: 2109, type: 1 }, // teutonic knight
   { target: 1203, source: 2110, type: 1 }, // berserker
   { target: 1203, source: 2112, type: 1 }, // gbeto
+  { target: 1203, source: 2203, type: 1 }, // slinger
+  { target: 1203, source: 2203, type: 1 }, // slinger
+  { target: 1203, source: 2203, type: 1 }, // slinger
 
-  { target: 1203, source: 2203, type: 1 }, // slinger
-  { target: 1203, source: 2203, type: 1 }, // slinger
-  { target: 1203, source: 2203, type: 1 }, // slinger
+  // scout
+  { target: 1301, source: 2201, type: 1 }, // longbowman
+  { target: 1301, source: 2202, type: 1 }, // chu ko nu
+  { target: 1301, source: 2203, type: 1 }, // slinger
+  { target: 1301, source: 2205, type: 1 }, // plumed archer
+  { target: 1301, source: 2207, type: 1 }, // rattan archer
+  { target: 1301, source: 2502, type: 1 }, // organ gun
+  { target: 1301, source: 2604, type: 1 }, // missionary
+  { target: 1301, source: 2404, type: 1 }, // kipchak
+  { target: 1301, source: 2401, type: 1 }, // genitour
 
   // jaguar warrior
   { target: 2101, source: 1101, type: 1 }, // militia
@@ -283,12 +294,14 @@ export const combined = [
   // kamayuk
   { target: 2105, source: 1102, type: 1 }, // spearman
   { target: 2105, source: 1202, type: 1 }, // skirmisher
+  { target: 2105, source: 1301, type: 1 }, // scout
 
   // condottiero
   { target: 2106, source: 1102, type: 1 }, // spearman
   { target: 2106, source: 1201, type: 1 }, // archer
   { target: 2106, source: 1202, type: 1 }, // skirmisher
   { target: 2106, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2106, source: 1301, type: 1 }, // scout
 
   // samurai
   { target: 2107, source: 1102, type: 1 }, // spearman
@@ -302,14 +315,17 @@ export const combined = [
   { target: 2109, source: 1101, type: 1 }, // militia
   { target: 2109, source: 1102, type: 1 }, // spearman
   { target: 2109, source: 1202, type: 1 }, // skirmisher
+  { target: 2109, source: 1301, type: 1 }, // scout
 
   // berserker
   { target: 2110, source: 1102, type: 1 }, // spearman
   { target: 2110, source: 1202, type: 1 }, // skirmisher
+  { target: 2110, source: 1301, type: 1 }, // scout
 
   // gbeto
   { target: 2111, source: 1102, type: 1 }, // spearman
   { target: 2111, source: 1202, type: 1 }, // skirmisher
+  { target: 2111, source: 1301, type: 1 }, // scout
 
   // throwing axeman
   { target: 2112, source: 1102, type: 1 }, // spearman
@@ -345,10 +361,11 @@ export const combined = [
   { target: 2203, source: 1101, type: 1 }, // militia
   { target: 2203, source: 1102, type: 1 }, // spearman
 
-  // genoese crossbowman
+// genoese crossbowman
   { target: 2204, source: 1101, type: 1 }, // militia
   { target: 2204, source: 1102, type: 1 }, // spearman
   { target: 2204, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2204, source: 1301, type: 1 }, // scout
 
   // plumed archer
   { target: 2205, source: 1101, type: 1 }, // militia
@@ -371,49 +388,58 @@ export const combined = [
   // steppe lancer
   { target: 2301, source: 1202, type: 1 }, // skirmisher
   { target: 2301, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2301, source: 1301, type: 1 }, // scout
 
   // battle elephant
   { target: 2302, source: 1201, type: 1 }, // archer
   { target: 2302, source: 1202, type: 1 }, // skirmisher
   { target: 2302, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2302, source: 1301, type: 1 }, // scout
 
   // cataphracts
   { target: 2303, source: 1101, type: 1 }, // militia
   { target: 2303, source: 1201, type: 1 }, // archer
   { target: 2303, source: 1202, type: 1 }, // skirmisher
   { target: 2303, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2303, source: 1301, type: 1 }, // scout
 
   // tarkan
   { target: 2304, source: 1201, type: 1 }, // archer
   { target: 2304, source: 1202, type: 1 }, // skirmisher
   { target: 2304, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2304, source: 1301, type: 1 }, // scout
 
   // leitis
   { target: 2305, source: 1201, type: 1 }, // archer
   { target: 2305, source: 1202, type: 1 }, // skirmisher
   { target: 2305, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2305, source: 1301, type: 1 }, // scout
 
   // magyar huszar
   { target: 2306, source: 1201, type: 1 }, // archer
   { target: 2306, source: 1202, type: 1 }, // skirmisher
   { target: 2306, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2306, source: 1301, type: 1 }, // scout
 
   // war elephant
   { target: 2307, source: 1101, type: 1 }, // militia
   { target: 2307, source: 1201, type: 1 }, // archer
   { target: 2307, source: 1202, type: 1 }, // skirmisher
   { target: 2307, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2307, source: 1301, type: 1 }, // scout
 
   // boyar
   { target: 2308, source: 1101, type: 1 }, // militia
   { target: 2308, source: 1201, type: 1 }, // archer
   { target: 2308, source: 1202, type: 1 }, // skirmisher
   { target: 2308, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2308, source: 1301, type: 1 }, // scout
 
   // keshik
   { target: 2309, source: 1201, type: 1 }, // archer
   { target: 2309, source: 1202, type: 1 }, // skirmisher
   { target: 2309, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2309, source: 1301, type: 1 }, // scout
 
   // genitour
   { target: 2401, source: 1201, type: 1 }, // archer
@@ -429,6 +455,7 @@ export const combined = [
   { target: 2403, source: 1201, type: 1 }, // archer
   { target: 2403, source: 1202, type: 1 }, // skirmisher
   { target: 2403, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2403, source: 1301, type: 1 }, // scout
 
   // kipchak
   { target: 2404, source: 1101, type: 1 }, // militia
@@ -439,12 +466,14 @@ export const combined = [
   { target: 2405, source: 1201, type: 1 }, // archer
   { target: 2405, source: 1202, type: 1 }, // skirmisher
   { target: 2405, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2405, source: 1301, type: 1 }, // scout
 
   // war wagon
   { target: 2406, source: 1101, type: 1 }, // militia
   { target: 2406, source: 1201, type: 1 }, // archer
   { target: 2406, source: 1202, type: 1 }, // skirmisher
   { target: 2406, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2406, source: 1301, type: 1 }, // scout
 
   // mangudai
   { target: 2407, source: 1101, type: 1 }, // militia
@@ -457,6 +486,7 @@ export const combined = [
   { target: 2408, source: 1201, type: 1 }, // archer
   { target: 2408, source: 1202, type: 1 }, // skirmisher
   { target: 2408, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2408, source: 1301, type: 1 }, // scout
 
   // conquistador
   { target: 2409, source: 1101, type: 1 }, // militia
@@ -464,6 +494,7 @@ export const combined = [
   { target: 2409, source: 1201, type: 1 }, // archer
   { target: 2409, source: 1202, type: 1 }, // skirmisher
   { target: 2409, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2409, source: 1301, type: 1 }, // scout
 
   // ballista elephant
   { target: 2501, source: 1101, type: 1 }, // militia
@@ -481,6 +512,7 @@ export const combined = [
   { target: 2601, source: 1201, type: 1 }, // archer
   { target: 2601, source: 1202, type: 1 }, // skirmisher
   { target: 2601, source: 1203, type: 1 }, // hand cannoneer
+  { target: 2601, source: 1301, type: 1 }, // scout
 
   // missionary
   { target: 2604, source: 1101, type: 1 }, // militia
